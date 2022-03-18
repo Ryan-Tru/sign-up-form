@@ -9,14 +9,17 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <!-- This is where the whole page is contained -->
     <main class="sign-up-container">
+        <!-- This section is for the logo -->
         <section class="logo-section">
             <div class="logo">
-                <img src="assets/images/odin-lined.png" alt="Odin Logo">
-                <h1>ODIN</h1>
+                <img class="logo-img" src="assets/images/odin-lined.png" alt="Odin Logo">
+                <h1 class="logo-name">ODIN</h1>
             </div>
         </section>
 
+        <!-- This section is for the sign up form and such -->
         <section class="sign-up-area">
             <div class="description">
                 <p>This is not a real online service! You know you need something like this in your life to help you realise your deepest dreams. Sign up <em>now</em> to get started.</p>
@@ -25,22 +28,22 @@
             <div class="sign-up-form-container">
                 <form id="sign-up-form">
                     <label for="first-name">FIRST NAME</label>
-                    <input type="text" name="first-name" id="first-name" required>
+                    <input class="form-item" type="text" name="first-name" id="first-name" required>
 
                     <label for="last-name">LAST NAME</label>
-                    <input type="text" name="last-name" id="last-name" required>
+                    <input class="form-item" type="text" name="last-name" id="last-name" required>
 
                     <label for="email">EMAIL</label>
-                    <input type="email" name="email" id="email"required>
+                    <input class="form-item" type="email" name="email" id="email"required>
 
                     <label for="phone-number">PHONE NUMBER</label>
-                    <input type="number" name="phone-number" id="phone-number" pattern="(^(04)[0-9]{8})" title="Please Enter an Australian number starting with 04" maxlength="10" required>
+                    <input class="form-item" type="number" name="phone-number" id="phone-number" pattern="(^(04)[0-9]{8})" title="Please Enter an Australian number starting with 04" maxlength="10" required>
 
                     <label for="password">PASSWORD</label>
-                    <input type="password" name="password" id="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" title="MINIMUM 8 CHARACTERS WITH UPPER AND LOWERCASE LETTERS AND SPECIAL CHARACTERS e.g., ! @ # ? ]" required>
+                    <input class="form-item" type="password" name="password" id="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" title="MINIMUM 8 CHARACTERS WITH UPPER AND LOWERCASE LETTERS AND SPECIAL CHARACTERS e.g., ! @ # ? ]" required>
 
                     <label for="confirm-pass">CONFIRM PASSWORD</label>
-                    <input type="password" name="confirm-pass" id="confirm-pass" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" title="MINIMUM 8 CHARACTERS WITH UPPER AND LOWERCASE LETTERS AND SPECIAL CHARACTERS e.g., ! @ # ? ]" required>
+                    <input class="form-item" type="password" name="confirm-pass" id="confirm-pass" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" title="MINIMUM 8 CHARACTERS WITH UPPER AND LOWERCASE LETTERS AND SPECIAL CHARACTERS e.g., ! @ # ? ]" required>
                 </form>
             </div>
             <div class="account-create-login">

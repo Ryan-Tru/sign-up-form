@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Norse;
+    src: url('/assets/fonts/Norse-Bold.otf') format("opentype");
+}
+
+body {
+    background-color: rgb(15, 15, 15);
+    display: flex;
+    justify-content: center;
+}
+
+/* Styling sign up container */
+
+.sign-up-container {
+    display: flex;
+    width: 70%;
+    height: 100vh;
+}
+
+/* Styling the logo section */
+
+.logo-section {
+    background:url('/assets/images/halie-west-25xggax4bSA-unsplash.jpg') no-repeat center;
+    background-size: cover;
+    width: 60rem;
+}
+
+.logo {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 230px;
+    padding: 1rem;
+}
+
+.logo-img {
+    width: auto;
+    height: 8rem;
+}
+
+.logo-name {
+    color: white;
+    font-family: "Norse";
+    font-size: 6rem;
+}
+
+/* Styling sign up area */
