@@ -52,3 +52,7 @@ body {
 }
 
 /* Styling sign up area */
+
+.sign-up-area {
+    background-color: rgb(249,250,251);
+}
