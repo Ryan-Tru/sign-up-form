@@ -9,8 +9,11 @@
 </head>
 <body>
     <main class="sign-up-container">
-        <section class="logo">
-
+        <section class="logo-section">
+            <div class="logo">
+                <img src="assets/images/odin-lined.png" alt="Odin Logo">
+                <h1>ODIN</h1>
+            </div>
         </section>
 
         <section class="sign-up-area">
@@ -20,14 +23,31 @@
             </div>
             <div class="sign-up-form-container">
                 <form id="sign-up-form">
-                    <label for="fname">FIRST NAME</label>
-                    <input type="text" name="fname" id="first-name">
+                    <label for="first-name">FIRST NAME</label>
+                    <input type="text" name="first-name" id="first-name" required>
+
+                    <label for="last-name">LAST NAME</label>
+                    <input type="text" name="last-name" id="last-name" required>
+
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="email" id="email"required>
+
+                    <label for="phone-number">PHONE NUMBER</label>
+                    <input type="number" name="phone-number" id="phone-number" pattern="(^(04)[0-9]{8})" title="Please Enter an Australian number starting with 04" maxlength="10" required>
+
+                    <label for="password">PASSWORD</label>
+                    <input type="password" name="password" id="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" title="MINIMUM 8 CHARACTERS WITH UPPER AND LOWERCASE LETTERS AND SPECIAL CHARACTERS e.g., ! @ # ? ]" required>
+
+                    <label for="confirm-pass">CONFIRM PASSWORD</label>
+                    <input type="password" name="confirm-pass" id="confirm-pass" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" title="MINIMUM 8 CHARACTERS WITH UPPER AND LOWERCASE LETTERS AND SPECIAL CHARACTERS e.g., ! @ # ? ]" required>
                 </form>
             </div>
             <div class="account-create-login">
-
+                <button type="submit" form="sign-up-form">Create Account</button>
             </div>
         </section>
     </main>
+
+    <script src="app.js" defer></script>
 </body>
 </html>
