@@ -9,7 +9,7 @@
 
 @font-face {
     font-family: Norse;
-    src: url('/assets/fonts/Norse-Bold.otf') format("opentype");
+    src: url('assets/fonts/Norse-Bold.otf') format("opentype");
 }
 
 body {
@@ -29,7 +29,7 @@ body {
 /* Styling the logo section */
 
 .logo-section {
-    background:url('/assets/images/halie-west-25xggax4bSA-unsplash.jpg') no-repeat center;
+    background:url('assets/images/halie-west-25xggax4bSA-unsplash.jpg') no-repeat center;
     background-size: cover;
     width: 55rem;
 }
