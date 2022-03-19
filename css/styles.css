@@ -161,3 +161,38 @@ label[for="confirm-pass"] {
     grid-row: 4 / 5;
     grid-column: 2 / 3;
 }
+
+/* Styling the account creating/login area */
+
+.account-create-login {
+    margin-top: 1.5rem;
+    margin-left: 50px;
+}
+
+.create-btn {
+    margin-bottom: 1.5rem;
+    padding: 0.7rem 2.5rem;
+    border: none;
+    border-radius: 5px;
+    color: rgb(249,250,251);
+    background-color: #596D48;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.create-btn:hover {
+    background-color: #333f29;
+}
+
+.login-link {
+    text-decoration: none;
+    color: #596D48;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.login-link:hover {
+    color: #333f29;
+}
+
