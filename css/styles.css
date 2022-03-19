@@ -31,27 +31,28 @@ body {
 .logo-section {
     background:url('/assets/images/halie-west-25xggax4bSA-unsplash.jpg') no-repeat center;
     background-size: cover;
-    width: 70rem;
+    width: 55rem;
 }
 
 .logo {
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     margin-top: 220px;
     padding: 1rem;
 }
 
 .logo-img {
     width: auto;
-    height: 8rem;
+    height: 7.5rem;
 }
 
 .logo-name {
     color: white;
     font-family: "Norse";
     font-size: 6rem;
+    padding-top: 20px;
 }
 
 /* Styling sign up area */
@@ -63,8 +64,8 @@ body {
 }
 
 .description {
-    padding: 150px 170px 50px 50px;
-    font-size: 1.4rem;
+    padding: 150px 100px 50px 50px;
+    font-size: 1.3rem;
     font-weight: 500;
     height: 300px;
 }
@@ -72,6 +73,8 @@ body {
 .second-paragraph {
     margin-top: 1.25rem;
 }
+
+/* Styling the form itself */
 
 .sign-up-form-container {
     background-color: white;
@@ -86,6 +89,45 @@ body {
 
 .form-item {
     display: flex;
+    width: 210px;
+    height: 1.5rem;
+    border: none;
+    border: 1px solid #E5E7EB;
+    transition: 0.2s;
+    border-radius: 2px;
+}
+
+.form-item:focus {
+    border: 1px solid blue;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+.form-legend {
+    font-size: 1.3rem;
+    padding: 1rem 1rem 1rem 0;
+    color: rgb(74,81,93);
+    font-weight: 500;
+}
+
+label {
+    font-size: 0.7rem;
+    letter-spacing: 0.1rem;
+    color: rgb(74,81,93);
+    font-weight: 500;
+    padding: 1rem 1rem 1rem 0;
+}
+
+
+/* Removing arrow buttons on the number inputs */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
 }
 
 /* Placing items with grid */
