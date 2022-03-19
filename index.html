@@ -26,7 +26,7 @@
                 <p class="second-paragraph">You <em>know</em> you want to.</p>
             </div>
             <div class="sign-up-form-container">
-                <form id="sign-up-form">
+                <form id="sign-up-form" onsubmit="return false">
                     <legend class="form-legend">Let's do this!</legend>
                     <label for="first-name">FIRST NAME <input class="form-item" type="text" name="first-name" id="first-name" required></label>
                     
@@ -40,10 +40,10 @@
                     <label for="phone-number">PHONE NUMBER <input class="form-item" type="number" name="phone-number" id="phone-number" pattern="(^(04)[0-9]{8})" title="Please Enter an Australian number starting with 04" maxlength="10" required></label>
                     
 
-                    <label for="password">PASSWORD <input class="form-item error" type="password" name="password" id="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" title="MINIMUM 8 CHARACTERS WITH UPPER AND LOWERCASE LETTERS AND SPECIAL CHARACTERS e.g., ! @ # ? ]" required></label>
+                    <label for="password">PASSWORD <input class="form-item" type="password" name="password" id="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" title="MINIMUM 8 CHARACTERS WITH UPPER AND LOWERCASE LETTERS AND SPECIAL CHARACTERS e.g., ! @ # ? ]" required><p class="error-message">* Passwords do not match</p></label>
                     
 
-                    <label for="confirm-pass">CONFIRM PASSWORD <input class="form-item error" type="password" name="confirm-pass" id="confirm-pass" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" title="MINIMUM 8 CHARACTERS WITH UPPER AND LOWERCASE LETTERS AND SPECIAL CHARACTERS e.g., ! @ # ? ]" required></label>
+                    <label for="confirm-pass">CONFIRM PASSWORD <input class="form-item" type="password" name="confirm-pass" id="confirm-pass" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" title="MINIMUM 8 CHARACTERS WITH UPPER AND LOWERCASE LETTERS AND SPECIAL CHARACTERS e.g., ! @ # ? ]" required></label>
                     
                 </form>
             </div>
